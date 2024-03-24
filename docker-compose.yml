@@ -19,7 +19,7 @@ services:
     networks:
       - arch-network
     ports:
-      - 3361:3361s
+      - 3361:3361
     healthcheck:
       test: "/usr/bin/mariadb --user=stud --password=stud --execute \"SHOW DATABASES;\""
       interval: 15s
